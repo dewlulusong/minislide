@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "刻度尺",
+    "navigationBarTextStyle": "black"
+  },
+  "networkTimeout": {
+    "request": 15000
+  },
+  "navigateToMiniProgramAppIdList": [],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

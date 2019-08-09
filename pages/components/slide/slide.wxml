@@ -1,0 +1,20 @@
+
+<!-- 标尺 -->
+<view id="ruler" class="{{type}}">
+    <view class="cur_val">
+        <text>{{curVal}}</text>
+        <text class="unit">{{unit}}</text>
+    </view>
+
+    <view class="box">
+        <text class="cursor"></text>
+        <scroll-view scroll-x="true" scroll-left="{{salNum}}" scroll-with-animation='true' catchscroll="bindscroll" throttle="{{false}}">
+            <view class="scroller" style="width:{{scaleWidth}};" >
+                <text wx:for="{{count}}" wx:key="{{index}}" class="{{((item+min)*step) % bigStep == 0 ? 'big':((item+min)*step) % middleStep == 0 ? 'middle' : ''}}">
+                    <text wx:if="{{(item+min)%10==0}}" class="scale_txt">{{item + min}}</text>
+
+                </text>
+            </view>
+        </scroll-view>
+    </view>
+</view>

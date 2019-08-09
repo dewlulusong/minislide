@@ -1,0 +1,10 @@
+{
+    "navigationStyle":"default",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "刻度尺",
+    "navigationBarTextStyle": "black",
+    "disableScroll": true,
+    "usingComponents": {
+  	     "slide": "../components/slide/slide"
+    }
+}

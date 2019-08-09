@@ -1,0 +1,9 @@
+<!--index.wxml-->
+
+
+<view>
+	<slide id="rule" min="0" max="100" def="30" bind:slide="slideTrigger"></slide>
+</view>
+
+<view>当前滑动值：{{val}}</view>
+
