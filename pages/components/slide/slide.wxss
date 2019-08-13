@@ -6,7 +6,7 @@ page {
 }
 .cur_val {
     font-size: 74rpx;
-    color: yellow;
+    color: red;
     font-weight: bold;
     text-align: center;
     display: block;
@@ -27,7 +27,7 @@ page {
     left: 50%;
     width: 6rpx;
     height: 140rpx;
-    background: yellow;
+    background: red;
     transform: translate(-50%,0);
     z-index: 9
 }
