@@ -15,7 +15,7 @@
 
 	<view class="box">
 		<text class="cursor"></text>
-		<scroll-view scroll-x="true" scroll-left="{{salNum}}" scroll-with-animation='true' catchscroll="bindscroll" throttle="{{false}}">
+		<scroll-view scroll-x="true" scroll-left="{{salNum}}" scroll-with-animation='true' bindscroll="bindscroll" throttle="{{false}}">
 			<view class="scroller" style="width:{{scaleWidth}};">
 				<text wx:for="{{count}}" wx:key="index" class="line_txt {{(item*step + min) % (bigStep*step) == 0 ? 'big':(item*step + min) % (middleStep*step) == 0 ? 'middle' : ''}}">
                     <text wx:if="{{(item*step + min) % (bigStep*step) == 0}}" class="scale_txt">{{item*step + min}}</text>
