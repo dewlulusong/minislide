@@ -1,2 +1,27 @@
 /**app.wxss**/
 
+	/* font */
+
+  .fl{
+    font-size: 16rpx;
+    /* 24 */
+  }
+  .fm{
+    font-size: 24rpx;
+    /* 36 */
+  }
+    
+  .fb{
+    font-size: 32rpx;
+    /* 48 */
+  }
+  .fxb{
+    font-size: 40rpx;
+  
+    /* 57 */
+  }
+  .fxxxb{
+    font-size: 78rpx;
+    /* 117 */
+  }
+  

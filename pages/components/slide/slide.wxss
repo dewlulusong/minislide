@@ -1,34 +1,84 @@
 /*
 *滑动标尺样式
 */
-page {
-    /*background-color: blue;*/
-}
+/* page {
+    background-color: blue;
+} */
+/* font */
+
+.fl{
+    font-size: 16rpx;
+    /* 24 */
+  }
+  .fm{
+    font-size: 24rpx;
+    /* 36 */
+  }
+    
+  .fb{
+    font-size: 32rpx;
+    /* 48 */
+  }
+  .fxb{
+    font-size: 40rpx;
+  
+    /* 57 */
+  }
+  .fxxxb{
+    font-size: 78rpx;
+    /* 117 */
+  }
+  
+/* 
+.ruler{
+    display: flex;
+    align-items: center;
+   flex-direction: column;
+   border: 1px solid green;
+
+} */
 .cur_val {
-    font-size: 74rpx;
-    color: red;
-    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    color: #000;
     text-align: center;
-    display: block;
 }
+.cur_val>.fm:first-child{
+    color: #fc427b;
+}
+.cur_val>.rulerno{
+    text-align: center;
+}
+
 .cur_val .unit {
-    font-size: 44rpx;
+    /* 和first-child完全一致, 这样可以保证标数居中 */
+    color: #fff;
 }
+.rulerno{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+
+
 .box {
     width: 90%;
     height: 140rpx;
     margin:10rpx auto 60rpx;
     overflow: hidden;
-    position: relative;
+    border-radius: 70rpx;
+    border: 1px solid #000;
+    display: flex;
 }
 .cursor {
     position: absolute;
-    top: 40rpx;
     left: 50%;
     width: 6rpx;
     height: 140rpx;
     background: red;
-    transform: translate(-50%,0);
+    /* transform: translate(-50%,0); */
     z-index: 9
 }
 .wrapper {
@@ -39,21 +89,21 @@ page {
     /*width: 1500rpx;*/
     padding: 40rpx 47% 40rpx 50%;
     /*transition: all 1s;*/
+    display: flex;
+    align-items: center;
+    
 }
-.scroller>text{
+.scroller>.line_txt{
     font-size: 20rpx;
     color: #333;
     display: inline-block;
     width: 9px;
     border-left: 1px solid #333;
-    border-bottom: 1px solid #333;
     height: 20rpx;
     vertical-align: bottom;
     position: relative;
 }
-.scroller>text:last-of-type{
-    border-bottom: 0rpx;
-}
+
 .scroller .scale_txt{
     font-size: 24rpx;
     font-style: normal;
