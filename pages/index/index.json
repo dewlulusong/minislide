@@ -1,7 +1,6 @@
 {
     
-    "disableScroll": true,
     "usingComponents": {
-  	     "slide": "../components/slide/slide"
+  	     "slide": "/pages/components/slide/slide"
     }
 }
