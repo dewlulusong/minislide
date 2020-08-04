@@ -1,27 +1,24 @@
 <!-- 标尺 -->
 <view  >
-
 	<view class="cur_val">
 		<text class="fm">{{title}}: </text>
         <view class="rulerno">
             <text class="fxb">{{curVal}}  </text>
             <text class="fl">{{unit}}</text>
-      
-        </view>
-		
+        </view>	
 		<text class="unit fm">{{title}}: </text>
 	</view>
 
-
 	<view class="box">
 		<text class="cursor"></text>
-		<scroll-view scroll-x="true" scroll-left="{{salNum}}" scroll-with-animation='true' bindscroll="bindscroll" throttle="{{false}}">
+		<scroll-view scroll-x="true" scroll-left="{{salNum}}" scroll-with-animation='true' catchscroll="scroll" throttle="{{false}}">
 			<view class="scroller" style="width:{{scaleWidth}};">
 				<text wx:for="{{count}}" wx:key="index" class="line_txt {{(item*step + min) % (bigStep*step) == 0 ? 'big':(item*step + min) % (middleStep*step) == 0 ? 'middle' : ''}}">
                     <text wx:if="{{(item*step + min) % (bigStep*step) == 0}}" class="scale_txt">{{item*step + min}}</text>
-
 				</text>
 			</view>
 		</scroll-view>
 	</view>
+	<button open-type="feedback">传log</button>
+
 </view>

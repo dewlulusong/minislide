@@ -41,7 +41,7 @@
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    color: #000;
+    color: #fff;
     text-align: center;
 }
 .cur_val>.fm:first-child{
@@ -52,8 +52,8 @@
 }
 
 .cur_val .unit {
-    /* 和first-child完全一致, 这样可以保证标数居中 */
-    color: #fff;
+    /* 和first-child完全一致, 这样可以保证标数居中, 全透明又可以隐藏起来. */
+    color: transparent;
 }
 .rulerno{
     display: flex;
@@ -69,7 +69,7 @@
     margin:10rpx auto 60rpx;
     overflow: hidden;
     border-radius: 70rpx;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     display: flex;
 }
 .cursor {
@@ -95,10 +95,10 @@
 }
 .scroller>.line_txt{
     font-size: 20rpx;
-    color: #333;
+    color: #ddd;
     display: inline-block;
     width: 9px;
-    border-left: 1px solid #333;
+    border-left: 1px solid #ddd;
     height: 20rpx;
     vertical-align: bottom;
     position: relative;

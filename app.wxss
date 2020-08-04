@@ -25,3 +25,7 @@
     /* 117 */
   }
   
+  page{
+    background-color: #434343;
+    color: #bbb;
+  }

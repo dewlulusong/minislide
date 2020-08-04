@@ -1,7 +1,5 @@
 /*questions.wxss*/
-page{
-	background: #ffffff;
-}
+
 ::-webkit-scrollbar {
   width: 0;
   height: 0;
